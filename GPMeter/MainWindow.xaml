@@ -1,0 +1,14 @@
+﻿<Window x:Class="GPMeter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GPMeter"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="427" Width="40" ShowInTaskbar="False" Topmost="True" WindowStyle="ToolWindow"
+        MouseLeftButtonDown="Window_MouseLeftButtonDown">
+    <Grid>
+        <ProgressBar x:Name="GPMeter" HorizontalAlignment="Center" Height="411" VerticalAlignment="Center" Width="40" Foreground="{Binding Foreground.Color, ElementName=GPMeter}" Value="{Binding DataContext, ElementName=GPMeter}"/>
+
+    </Grid>
+</Window>
